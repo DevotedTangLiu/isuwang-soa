@@ -80,8 +80,8 @@ public class RequestHelper {
         if (args.length != 2) {
             System.out.println("example: java -jar dapeng.jar request request.json");
             System.out.println("         java -jar dapeng.jar request request.xml");
-            System.out.println("         java -Dsoa.service.ip=192.168.0.1 -Dsoa.service.port=9091 -jar dapeng.jar request request.json");
-            System.out.println("         java -Dsoa.service.ip=192.168.0.1 -Dsoa.service.port=9091 -jar dapeng.jar request request.xml");
+            System.out.println("         java -Dsoa.service.ip=192.168.0.1 -Dsoa.service.port=9091 -jar dapeng.jar request:json request.json");
+            System.out.println("         java -Dsoa.service.ip=192.168.0.1 -Dsoa.service.port=9091 -jar dapeng.jar request:xml request.xml");
             System.exit(0);
         }
         String jsonFile = args[1];

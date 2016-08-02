@@ -26,7 +26,7 @@ public class RequestExampleHelper {
 
     public static void getRequestJson(String... args) {
         if (args.length != 4) {
-            System.out.println("example: java -jar dapeng.jar json com.isuwang.soa.hello.service.HelloService 1.0.0 sayHello");
+            System.out.println("example: java -jar dapeng.jar example:json com.isuwang.soa.hello.service.HelloService 1.0.0 sayHello");
             System.exit(0);
         }
         String serviceName = args[1];
@@ -51,7 +51,7 @@ public class RequestExampleHelper {
 
     public static void getRequestXml(String... args) {
         if (args.length != 4) {
-            System.out.println("example: java -jar dapeng.jar xml com.isuwang.soa.hello.service.HelloService 1.0.0 sayHello");
+            System.out.println("example: java -jar dapeng.jar example:xml com.isuwang.soa.hello.service.HelloService 1.0.0 sayHello");
             System.exit(0);
         }
         String serviceName = args[1];
