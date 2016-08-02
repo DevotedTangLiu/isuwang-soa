@@ -48,10 +48,10 @@ public class RequestHelper {
 
         String jsonString = null;
         boolean isJson = false;
-        if (jsonFile.endsWith(".json")) {
+        if (args[0].endsWith(":json")) {
             isJson = true;
             jsonString = readFromeFile(jsonFile);
-        } else if (jsonFile.endsWith(".xml")) {
+        } else if (args[0].endsWith(":xml")) {
             jsonString = parseFromXmlToJson(jsonFile);
         }
 
